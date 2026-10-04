@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome To reselling — Reselling Starter Hub</title>
+<style>
+:root{--bg:#0b0c10;--panel:#13151b;--line:#292d37;--text:#f5f6fa;--muted:#a8adba;--lime:#c7ff5e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #ffffff12}.logo{font-size:22px;font-weight:900;letter-spacing:-.8px}.logo span,h1 em{color:var(--lime);font-style:normal}.links{display:flex;gap:24px;color:#c1c5ce;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;border-radius:11px;padding:13px 18px;font-weight:800;cursor:pointer;transition:.18s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--lime);color:#11150a}.secondary{border-color:#343844;background:#181a22;color:var(--text)}.nav .btn{padding:10px 14px;font-size:13px}.hero{text-align:center;padding:84px 0 62px}.eyebrow,.kicker{color:var(--lime);font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}.eyebrow{display:inline-block;border:1px solid #343a2b;background:#171b13;padding:7px 12px;border-radius:99px;letter-spacing:.7px}h1{font-size:clamp(42px,7vw,76px);line-height:1.03;letter-spacing:-3px;max-width:850px;margin:23px auto 20px}.hero p{max-width:650px;margin:auto;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:29px}.micro{font-size:12px;color:#7f8593;margin-top:16px}.stats{display:grid;grid-template-columns:repeat(3,1fr);max-width:760px;margin:48px auto 0;border:1px solid var(--line);border-radius:16px;background:#ffffff04}.stat{padding:20px 12px}.stat+.stat{border-left:1px solid var(--line)}.stat strong{display:block;font-size:24px}.stat span{color:var(--muted);font-size:12px}.section{padding:62px 0}.head{text-align:center;max-width:680px;margin:0 auto 30px}.section h2{font-size:clamp(30px,4vw,45px);letter-spacing:-1.5px;line-height:1.1;margin:10px 0 12px}.head p,.card p,.product p,.callout p,.faq p{color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card,.product,.faq details{background:linear-gradient(145deg,#171a22,#101116);border:1px solid var(--line);border-radius:16px}.card{padding:23px}.icon{font-size:25px;margin-bottom:15px}.step{color:var(--lime);font-size:12px;font-weight:900;letter-spacing:1px}.card h3{margin:7px 0}.card p{font-size:14px;margin-bottom:0}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.product{overflow:hidden}.art{height:140px;display:grid;place-items:center;font-size:52px;background:radial-gradient(circle at 50% 30%,#353a2b,#1a1d23 72%)}.product:nth-child(2) .art{background:radial-gradient(circle,#3a3151,#1a1b24 72%)}.product:nth-child(3) .art{background:radial-gradient(circle,#254447,#1a1b24 72%)}.product:nth-child(4) .art{background:radial-gradient(circle,#4a3329,#1a1b24 72%)}.info{padding:14px}.tag{font-size:10px;color:var(--lime);font-weight:900;letter-spacing:1px;text-transform:uppercase}.product h3{font-size:15px;margin:5px 0}.product p{font-size:12px;margin:0 0 13px}.product .btn{width:100%;padding:10px;font-size:12px}.callout{border:1px solid #3a4330;border-radius:22px;padding:36px;background:radial-gradient(circle at 100% 0%,#29331d,#151810 42%,#12141a 80%);display:flex;align-items:center;justify-content:space-between;gap:24px}.callout h2{font-size:clamp(28px,4vw,40px);margin:0 0 10px}.callout p{max-width:570px;margin:0}.faq{max-width:800px;margin:auto}.faq details{padding:18px;margin:10px 0}.faq summary{cursor:pointer;font-weight:750;list-style:none;display:flex;justify-content:space-between;gap:20px}.faq summary:after{content:"+";color:var(--lime);font-size:22px}.faq details[open] summary:after{content:"−"}.faq p{font-size:14px;margin-bottom:0}.email{display:flex;gap:8px;max-width:520px;margin:24px auto 0}.email input{min-width:0;flex:1;padding:14px;border:1px solid var(--line);border-radius:10px;background:#101218;color:var(--text)}#msg{color:var(--lime);font-size:13px;min-height:20px;margin-top:10px}#checklist{display:none;text-align:left;margin:22px auto 0;max-width:560px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}.footer{border-top:1px solid var(--line);padding:25px 0;color:#818795;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.disclaimer{max-width:760px;color:#747b88;margin-top:12px}
+@media(max-width:800px){.links{gap:12px}.grid3{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.callout{align-items:flex-start;flex-direction:column}.hero{padding-top:60px}}
+@media(max-width:520px){.links{display:none}.nav{height:65px}h1{letter-spacing:-2px}.hero p{font-size:16px}.stats{margin-top:32px}.stat strong{font-size:20px}.stat span{font-size:10px}.section{padding:45px 0}.art{height:105px;font-size:40px}.info{padding:10px}.callout{padding:24px}.email{flex-direction:column}.email .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+<a class="logo" href="#">Welcome To reselling</a>
+<nav class="links"><a href="#how">How it works</a><a href="#ideas">Product ideas</a><a href="#faq">FAQ</a></nav>
+<a class="btn primary" href="#start">Get started ↗</a>
+</header>
+<main>
+<section class="hero wrap">
+<div class="eyebrow">● YOUR RESELLING STARTER HUB</div>
+<h1>Turn good finds into<br><em>your next big idea.</em></h1>
+<p>Learn the basics of reselling, discover product categories to research, and build a smarter plan before you spend a dollar.</p>
+<div class="actions"><a class="btn primary" href="#how">Explore the guide ↗</a><a class="btn secondary" href="#ideas">Browse product ideas</a></div>
+<div class="micro">Beginner-friendly · Research-first · No guaranteed profits</div>
+<div class="stats"><div class="stat"><strong>01</strong><span>Research your niche</span></div><div class="stat"><strong>02</strong><span>Check sold prices</span></div><div class="stat"><strong>03</strong><span>Track every cost</span></div></div>
+</section>
+<section class="section wrap" id="how">
+<div class="head"><div class="kicker">THE PROCESS</div><h2>A simple system beats guessing.</h2><p>Start small, validate demand, and learn the numbers before buying inventory.</p></div>
+<div class="grid3">
+<article class="card"><div class="icon">⌕</div><div class="step">STEP 01</div><h3>Find a niche</h3><p>Choose a category you understand. Compare condition, demand, availability, and what buyers actually pay.</p></article>
+<article class="card"><div class="icon">↗</div><div class="step">STEP 02</div><h3>Calculate the margin</h3><p>Estimate sale price, platform fees, shipping, supplies, taxes, and original cost before deciding.</p></article>
+<article class="card"><div class="icon">✓</div><div class="step">STEP 03</div><h3>List with confidence</h3><p>Use honest descriptions, clear photos, accurate condition notes, and a reliable shipping plan.</p></article>
+</div>
+</section>
+<section class="section wrap" id="ideas">
+<div class="head"><div class="kicker">RESEARCH INSPIRATION</div><h2>Categories worth exploring.</h2><p>These are ideas to investigate—not promises of profit. Verify current demand and authenticity.</p></div>
+<div class="products">
+<article class="product"><div class="art">👟</div><div class="info"><span class="tag">Style</span><h3>Sneakers & apparel</h3><p>Study sizing, condition, authenticity, and completed sales.</p><button class="btn secondary idea" data-idea="Sneakers & apparel">Research this niche ↗</button></div></article>
+<article class="product"><div class="art">🎮</div><div class="info"><span class="tag">Gaming</span><h3>Games & accessories</h3><p>Check compatibility, completeness, testing, and shipping costs.</p><button class="btn secondary idea" data-idea="Games & accessories">Research this niche ↗</button></div></article>
+<article class="product"><div class="art">📷</div><div class="info"><span class="tag">Tech</span><h3>Electronics</h3><p>Verify function, model numbers, battery health, and return risk.</p><button class="btn secondary idea" data-idea="Electronics">Research this niche ↗</button></div></article>
+<article class="product"><div class="art">🧸</div><div class="info"><span class="tag">Collectibles</span><h3>Toys & collectibles</h3><p>Look for completed sales and verify authenticity.</p><button class="btn secondary idea" data-idea="Toys & collectibles">Research this niche ↗</button></div></article>
+</div>
+</section>
+<section class="section wrap" id="start"><div class="callout"><div><div class="kicker">BUILD YOUR PLAN</div><h2>Make your first move a smart one.</h2><p>Create a simple research checklist and compare costs before buying inventory. This demo does not collect or send personal information.</p></div><a class="btn primary" href="#check">Get the starter checklist ↓</a></div></section>
+<section class="section wrap" id="check"><div class="head"><div class="kicker">FREE STARTER CHECKLIST</div><h2>Plan before you purchase.</h2><p>Enter a product niche to generate a checklist in your browser.</p>
+<form class="email" id="form"><input id="niche" maxlength="80" required placeholder="e.g. used game controllers" aria-label="Product niche"><button class="btn primary">Create checklist</button></form><div id="msg" aria-live="polite"></div>
+<div id="checklist"><h3 id="checkTitle">Your research checklist</h3><ul><li>Compare at least 5 completed sales.</li><li>Estimate platform fees, shipping, supplies, and taxes.</li><li>Check condition, authenticity, and return policies.</li><li>Set a maximum purchase price before sourcing.</li><li>Start with a small, affordable test.</li></ul><button class="btn secondary" type="button" id="copy">Copy checklist</button></div>
+</div></section>
+<section class="section wrap" id="faq"><div class="head"><div class="kicker">FAQ</div><h2>Good questions to ask first.</h2></div><div class="faq">
+<details><summary>Do you guarantee that I'll make money?</summary><p>No. Reselling has risks, and products may not sell. Research completed sales and calculate every cost before buying inventory.</p></details>
+<details><summary>Do I need to buy a course or inventory?</summary><p>No purchase is required to use this sample website. You can begin by researching listings and learning how fees and shipping affect margins.</p></details>
+<details><summary>Can I sell branded products?</summary><p>Only sell items you are allowed to sell. Avoid counterfeit goods and check platform rules, restrictions, and trademark policies.</p></details>
+<details><summary>Is this an actual marketplace?</summary><p>This is a front-end website template. It does not process payments, sell products, store customer data, or connect to suppliers.</p></details>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="foot"><a class="logo" href="#">Welcome To reselling</a><span>Built for learning the basics of reselling.</span><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Back to top ↑</a></div><p class="disclaimer">Welcome To reselling is an independent demo template and is not affiliated with another reselling program or brand. No earnings are promised. Research laws, taxes, platform policies, and product authenticity before selling.</p></div></footer>
+<script>
+const form=document.getElementById("form"),niche=document.getElementById("niche"),checklist=document.getElementById("checklist"),msg=document.getElementById("msg");
+form.addEventListener("submit",e=>{e.preventDefault();const value=niche.value.trim();if(!value){msg.textContent="Enter a product niche first.";return;}document.getElementById("checkTitle").textContent="Research checklist: "+value;checklist.style.display="block";msg.textContent="Your checklist is ready below.";checklist.scrollIntoView({behavior:"smooth",block:"nearest"});});
+document.getElementById("copy").addEventListener("click",async()=>{const text=document.getElementById("checkTitle").textContent+"\n- Compare 5 completed sales\n- Estimate fees, shipping, supplies, and taxes\n- Check condition and authenticity\n- Set a maximum purchase price\n- Start with a small, affordable test";try{await navigator.clipboard.writeText(text);msg.textContent="Checklist copied!";}catch{msg.textContent="Select and copy the checklist text manually.";}}); 
+document.querySelectorAll(".idea").forEach(b=>b.addEventListener("click",()=>{niche.value=b.dataset.idea;document.getElementById("check").scrollIntoView({behavior:"smooth"});niche.focus({preventScroll:true});}));
+</script>
+</body>
+</html>
